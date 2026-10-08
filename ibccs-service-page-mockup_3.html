@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ბუღალტრული მომსახურება — სერვის-გვერდი (მოქაფი)</title>
+<style>@font-face{font-family:'IBCCS Display';src:url('https://static.wixstatic.com/ufonts/4cbd90_5cb19ac6d20d4c37b8bee310965537a0/woff2/file.woff2') format('woff2');font-display:swap}@font-face{font-family:'IBCCS Text';src:url('https://static.wixstatic.com/ufonts/2b0a44_d0da32d395f445f282abfd31f9887d42/woff2/file.woff2') format('woff2');font-display:swap}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#3A8088}a:hover{color:#234D51}
+.ph{display:inline-block;background:#FFF4D6;border:1px dashed #B7791F;color:#7A4B00;border-radius:4px;padding:2px 8px;font-size:13px;font-weight:500;line-height:1.5}
+summary{cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+h1,h2,h3,h4,summary{font-family:'IBCCS Display','Noto Sans Georgian',sans-serif;font-weight:400}
+strong,nav,label,input,select,textarea,button,footer,th,.ui,a[style*="padding"]{font-family:Verdana,Geneva,sans-serif}
+strong{font-weight:700}
+
+.sticky{display:none}
+@media (max-width:640px){.sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20}}
+</style>
+
+</head>
+<body>
+
+
+<div style="font-family: 'IBCCS Text', 'Noto Sans Georgian', sans-serif; color: #000000; background: #FFFFFF; min-height: 100vh;">
+
+  <header style="border-bottom: 1px solid #E4E1DC; background: #FFFFFF;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+      <a href="#" style="text-decoration: none; font-size: 22px; font-weight: 700; color: #000000;"><img src="https://static.wixstatic.com/media/bd3631_c11891f50e4f4b6585232f1fd0f0cb56~mv2.png" alt="ibccs.tax" width="119" height="22" style="display:block"></a>
+      <nav aria-label="მთავარი მენიუ" style="display: flex; flex-wrap: wrap; align-items: center; gap: 22px; font-size: 13px; line-height: 22.75px;"><a href="#" style="color: #444444; text-decoration: none;">მთავარი</a><a href="#" style="color: #444444; text-decoration: none;">ჩვენს შესახებ</a><a href="#" style="color: #5CA595; text-decoration: none;">სერვისები</a><a href="#" style="color: #444444; text-decoration: none;">პუბლიკაციები</a><a href="#" style="color: #444444; text-decoration: none;">ვებინარი</a><a href="#" style="color: #444444; text-decoration: none;">KYC</a><a href="#" style="color: #444444; text-decoration: none;">კონტაქტი</a><span style="color: #000000; font-size: 13px;">KA ▾</span></nav>
+      <a href="tel:+995322424837" style="color: #000000; text-decoration: none; font-size: 14px; font-weight: 600; padding: 11px 18px; border-radius: 4px; border: 1px solid #5CA595;">+995 32 24 24 837</a>
+    </div>
+  </header>
+
+  <section style="background: linear-gradient(180deg, #EAF4F1 0%, #FFFFFF 100%);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px 56px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+      <div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 18px;">
+        <nav aria-label="breadcrumb" style="font-size: 13px; color: #444444;"><a href="#" style="color: #444444;">მთავარი</a> › <a href="#" style="color: #444444;">სერვისები</a> › <span style="color: #000000;">ბუღალტრული მომსახურება</span></nav>
+        <h1 style="margin: 0; font-size: clamp(32px, 5vw, 46px); line-height: 1.2; color: #000000;">ბუღალტრული მომსახურება საქართველოში: თბილისი და ბათუმი</h1>
+        <p style="margin: 0; font-size: 16px; line-height: 28px; color: #000000;">აღრიცხვა, დეკლარაციები, ხელფასები და ფინანსური ანგარიშგება ერთ გუნდთან. პაკეტს თქვენი ბიზნესის მოცულობას და დღგ-ს სტატუსს ვუსადაგებთ.</p>
+        <div style="font-size: 13px; color: #444444;">განახლდა: ოქტომბერი 2026 · ავტორი: <span class="ph">[სახელი, კვალიფიკაცია]</span></div>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #000000;">
+          <li style="display: flex; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 18px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg>შპს-ები და ინდმეწარმეები, დღგ-ით და დღგ-ს გარეშე</li>
+          <li style="display: flex; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 18px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg>ყოველთვიური დეკლარაციები rs.ge-ზე და SARAS-ის ანგარიშგება</li>
+          <li style="display: flex; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 18px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg>ოფისები თბილისსა და ბათუმში</li>
+        </ul>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px;">
+          <a href="#prices" style="background: #5CA595; color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 600; padding: 15px 24px; border-radius: 4px;">ნახეთ ფასები</a>
+          <a href="tel:+995322424837" style="background: #FFFFFF; color: #000000; text-decoration: none; font-size: 16px; font-weight: 600; padding: 14px 23px; border-radius: 4px; border: 1px solid #5CA595;">დაგვირეკეთ</a>
+        </div>
+      </div>
+      <form id="quote" style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #E4E1DC; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 8px 24px rgba(44,43,105,0.08);">
+        <h2 style="margin: 0; font-size: 24px; line-height: 1.4; color: #000000;">მიიღეთ შეთავაზება</h2>
+        <p style="margin: 0; font-size: 13px; color: #444444;">ფასს გამოგიგზავნით <span class="ph">[X სამუშაო დღეში]</span></p>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 16px;">სახელი<input type="text" style="font: inherit; font-weight: 400; padding: 11px; border: 1px solid #C9C6C0; border-radius: 4px;"></label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 16px;">ტელეფონი<input type="tel" style="font: inherit; font-weight: 400; padding: 11px; border: 1px solid #C9C6C0; border-radius: 4px;"></label>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+          <label style="flex: 1 1 130px; display: flex; flex-direction: column; gap: 6px; font-size: 16px;">ბიზნესის ტიპი<select style="font: inherit; font-weight: 400; padding: 11px; border: 1px solid #C9C6C0; border-radius: 4px; background: #FFFFFF;"><option>ინდმეწარმე</option><option>შპს</option><option>სხვა</option></select></label>
+          <label style="flex: 1 1 130px; display: flex; flex-direction: column; gap: 6px; font-size: 16px;">დღგ-ს გადამხდელი<select style="font: inherit; font-weight: 400; padding: 11px; border: 1px solid #C9C6C0; border-radius: 4px; background: #FFFFFF;"><option>კი</option><option>არა</option><option>არ ვიცი</option></select></label>
+        </div>
+        <button type="button" style="font: inherit; background: #5CA595; color: #FFFFFF; font-size: 16px; font-weight: 600; padding: 14px; border: 0; border-radius: 4px; cursor: pointer; margin-top: 4px;">გაგზავნა</button>
+      </form>
+    </div>
+  </section>
+
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+      <div style="border: 1px solid #E4E1DC; border-radius: 10px; padding: 16px 20px;"><div style="font-family: Georgia, serif; font-size: 40px; line-height: 1.2; color: #000000;">2018</div><div style="font-size: 14px; color: #444444;">წლიდან ბაზარზე</div></div>
+      <div style="border: 1px solid #E4E1DC; border-radius: 10px; padding: 16px 20px;"><div><span class="ph">[N]+</span></div><div style="font-size: 14px; color: #444444; margin-top: 4px;">აქტიური კლიენტი</div></div>
+      <div style="border: 1px solid #E4E1DC; border-radius: 10px; padding: 16px 20px;"><div><span class="ph">[N] ოფისი [M] ქვეყანაში</span></div><div style="font-size: 14px; color: #444444; margin-top: 4px;">საერთაშორისო ქსელი</div></div>
+      <div style="border: 1px solid #E4E1DC; border-radius: 10px; padding: 16px 20px;"><div><span class="ph">[N]</span></div><div style="font-size: 14px; color: #444444; margin-top: 4px;">საბუღალტრო პროგრამა</div></div>
+    </div>
+  </div>
+
+  <section id="prices" style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 56px; display: flex; flex-direction: column; gap: 28px;">
+    <div style="display: flex; flex-direction: column; gap: 8px; max-width: 720px;">
+      <h2 style="margin: 0; font-size: clamp(28px, 4vw, 42px); line-height: 1.4; color: #000000;">რა ღირს ბუღალტრული მომსახურება?</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 28px; color: #000000;">ფასი დამოკიდებულია ტრანზაქციების რაოდენობაზე, თანამშრომლების რიცხვსა და დღგ-ს სტატუსზე. აირჩიეთ თქვენთვის შესაფერისი პაკეტი.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; align-items: stretch;">
+      
+        <article style="position: relative; background: #FFFFFF; border: 1px solid #E4E1DC; border-radius: 14px; padding: 28px 24px 24px; display: flex; flex-direction: column; gap: 14px;">
+          
+          <h3 style="margin: 0; font-size: 24px; line-height: 1.4; color: #000000;">სტარტაპი / ინდმეწარმე</h3>
+          <p style="margin: 0; font-size: 14px; line-height: 24px; color: #444444;">ინდმეწარმეები და ახალი ბიზნესები დღგ-ს გარეშე</p>
+          <div><span class="ph" style="font-size: 18px; font-weight: 700;">[___ ₾-დან / თვეში]</span></div>
+          <ul style="margin: 0; padding: 14px 0 0; border-top: 1px solid #EFECE8; list-style: none; display: flex; flex-direction: column; gap: 9px; font-size: 14px; color: #000000;">
+            
+              <li style="display: flex; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg><span>ყოველთვიური დეკლარაციები</span></li>
+            
+              <li style="display: flex; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg><span>rs.ge-ს მართვა</span></li>
+            
+              <li style="display: flex; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg><span>[კონსულტაცია თვეში: დასადასტურებელი]</span></li>
+            
+          </ul>
+          <a href="#quote" style="margin-top: auto; text-align: center; background: #FFFFFF; color: #5CA595; text-decoration: none; font-size: 15px; font-weight: 600; padding: 12px 16px; border-radius: 4px; border: 1px solid #5CA595;">მიიღეთ შეთავაზება</a>
+        </article>
+      
+        <article style="position: relative; background: #FFFFFF; border: 2px solid #5CA595; border-radius: 14px; padding: 28px 24px 24px; display: flex; flex-direction: column; gap: 14px;">
+          <span class="ph" style="position: absolute; top: -14px; left: 24px; font-size: 12px;">[ბეჯი: მაგ. ყველაზე ხშირი არჩევანი]</span>
+          <h3 style="margin: 0; font-size: 24px; line-height: 1.4; color: #000000;">მცირე და საშუალო ბიზნესი</h3>
+          <p style="margin: 0; font-size: 14px; line-height: 24px; color: #444444;">შპს დღგ-ით, [___] ტრანზაქციამდე თვეში</p>
+          <div><span class="ph" style="font-size: 18px; font-weight: 700;">[___ ₾-დან / თვეში]</span></div>
+          <ul style="margin: 0; padding: 14px 0 0; border-top: 1px solid #EFECE8; list-style: none; display: flex; flex-direction: column; gap: 9px; font-size: 14px; color: #000000;">
+            
+              <li style="display: flex; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg><span>სრული ბუღალტრული აღრიცხვა</span></li>
+            
+              <li style="display: flex; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg><span>ხელფასების უწყისი</span></li>
+            
+              <li style="display: flex; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg><span>ძირითადი საშუალებების აღრიცხვა</span></li>
+            
+              <li style="display: flex; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg><span>ყოველთვიური რეპორტი</span></li>
+            
+          </ul>
+          <a href="#quote" style="margin-top: auto; text-align: center; background: #5CA595; color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 600; padding: 12px 16px; border-radius: 4px; border: 1px solid #5CA595;">მიიღეთ შეთავაზება</a>
+        </article>
+      
+        <article style="position: relative; background: #FFFFFF; border: 1px solid #E4E1DC; border-radius: 14px; padding: 28px 24px 24px; display: flex; flex-direction: column; gap: 14px;">
+          
+          <h3 style="margin: 0; font-size: 24px; line-height: 1.4; color: #000000;">მსხვილი კომპანია</h3>
+          <p style="margin: 0; font-size: 14px; line-height: 24px; color: #444444;">[___]+ ტრანზაქცია, საერთაშორისო ოპერაციები</p>
+          <div><span class="ph" style="font-size: 18px; font-weight: 700;">[ინდივიდუალური ან ___ ₾-დან]</span></div>
+          <ul style="margin: 0; padding: 14px 0 0; border-top: 1px solid #EFECE8; list-style: none; display: flex; flex-direction: column; gap: 9px; font-size: 14px; color: #000000;">
+            
+              <li style="display: flex; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg><span>პერსონალური მთავარი ბუღალტერი</span></li>
+            
+              <li style="display: flex; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg><span>SARAS-ის ანგარიშგება</span></li>
+            
+              <li style="display: flex; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg><span>საგადასახადო დაგეგმვა</span></li>
+            
+              <li style="display: flex; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A8088" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 16px; margin-top: 3px;"><path d="M5 12l5 5 9-10"></path></svg><span>[მხარდაჭერის რეჟიმი]</span></li>
+            
+          </ul>
+          <a href="#quote" style="margin-top: auto; text-align: center; background: #FFFFFF; color: #5CA595; text-decoration: none; font-size: 15px; font-weight: 600; padding: 12px 16px; border-radius: 4px; border: 1px solid #5CA595;">მოითხოვეთ ზარი</a>
+        </article>
+      
+    </div>
+    <p style="margin: 0; font-size: 13px; color: #595959;">პაკეტების სახელები, საზღვრები და შიგთავსი სამუშაო ვერსიაა <span class="ph">[კლიენტთან დასადასტურებელი]</span></p>
+  </section>
+
+  <section style="background: #F6F4F1;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 24px;">
+      <h2 style="margin: 0; font-size: clamp(28px, 4vw, 42px); line-height: 1.4; color: #000000;">ვის სჭირდება საბუღალტრო მომსახურება?</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 28px; color: #000000; max-width: 800px;">ბუღალტრული აღრიცხვის აუთსორსინგი ყველაზე ხშირად მცირე და საშუალო ბიზნესს, სტარტაპებს და საქართველოში მოქმედ უცხოურ კომპანიებს სჭირდება. ასე აღრიცხვა, დეკლარაციები და ანგარიშგება ერთ გუნდთანაა, შტატში ბუღალტრის აყვანის გარეშე.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+        
+          <div style="background: #FFFFFF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px;">
+            <strong style="font-size: 16px; color: #000000;">სტარტაპები და ახალი ბიზნესები</strong>
+            <span style="font-size: 14px; line-height: 24px; color: #000000;">სწორი საგადასახადო სტრუქტურა პირველივე დღიდან.</span>
+          </div>
+        
+          <div style="background: #FFFFFF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px;">
+            <strong style="font-size: 16px; color: #000000;">დღგ-ს გადამხდელი კომპანიები</strong>
+            <span style="font-size: 14px; line-height: 24px; color: #000000;">დეკლარაციები ვადაში და შეცდომების გარეშე.</span>
+          </div>
+        
+          <div style="background: #FFFFFF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px;">
+            <strong style="font-size: 16px; color: #000000;">უცხოელი ინვესტორები</strong>
+            <span style="font-size: 14px; line-height: 24px; color: #000000;">შესაბამისობა საქართველოს საგადასახადო კანონმდებლობასთან.</span>
+          </div>
+        
+          <div style="background: #FFFFFF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px;">
+            <strong style="font-size: 16px; color: #000000;">ზრდადი კომპანიები</strong>
+            <span style="font-size: 14px; line-height: 24px; color: #000000;">ბუღალტერია იზრდება ბიზნესთან ერთად, შტატის გაზრდის გარეშე.</span>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 24px;">
+    <h2 style="margin: 0; font-size: clamp(28px, 4vw, 42px); line-height: 1.4; color: #000000;">რას მოიცავს ბუღალტრული მომსახურება</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+      
+        <div style="border: 1px solid #E4E1DC; border-radius: 12px; padding: 18px 20px; display: flex; gap: 12px;">
+          <span style="flex: 0 0 32px; width: 32px; height: 32px; border-radius: 8px; background: #E6F2EF; color: #3A8088; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;">1</span>
+          <div style="display: flex; flex-direction: column; gap: 4px;"><strong style="font-size: 15px; color: #000000;">მიმდინარე საბუღალტრო აღრიცხვა</strong><span style="font-size: 14px; line-height: 24px; color: #000000;">გაყიდვების, შესყიდვების, მიღებებისა და გადახდების გატარება.</span></div>
+        </div>
+      
+        <div style="border: 1px solid #E4E1DC; border-radius: 12px; padding: 18px 20px; display: flex; gap: 12px;">
+          <span style="flex: 0 0 32px; width: 32px; height: 32px; border-radius: 8px; background: #E6F2EF; color: #3A8088; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;">2</span>
+          <div style="display: flex; flex-direction: column; gap: 4px;"><strong style="font-size: 15px; color: #000000;">დოკუმენტბრუნვის მართვა</strong><span style="font-size: 14px; line-height: 24px; color: #000000;">ინვოისების, ხელშეკრულებების და დამხმარე საბუთების დამუშავება.</span></div>
+        </div>
+      
+        <div style="border: 1px solid #E4E1DC; border-radius: 12px; padding: 18px 20px; display: flex; gap: 12px;">
+          <span style="flex: 0 0 32px; width: 32px; height: 32px; border-radius: 8px; background: #E6F2EF; color: #3A8088; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;">3</span>
+          <div style="display: flex; flex-direction: column; gap: 4px;"><strong style="font-size: 15px; color: #000000;">წლიური ფინანსური ანგარიშგება</strong><span style="font-size: 14px; line-height: 24px; color: #000000;">მოგება-ზარალის უწყისი და ბალანსი.</span></div>
+        </div>
+      
+        <div style="border: 1px solid #E4E1DC; border-radius: 12px; padding: 18px 20px; display: flex; gap: 12px;">
+          <span style="flex: 0 0 32px; width: 32px; height: 32px; border-radius: 8px; background: #E6F2EF; color: #3A8088; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;">4</span>
+          <div style="display: flex; flex-direction: column; gap: 4px;"><strong style="font-size: 15px; color: #000000;">ხელფასების ადმინისტრირება</strong><span style="font-size: 14px; line-height: 24px; color: #000000;">ხელფასების, გადასახადებისა და დაქვითვების გაანგარიშება.</span></div>
+        </div>
+      
+        <div style="border: 1px solid #E4E1DC; border-radius: 12px; padding: 18px 20px; display: flex; gap: 12px;">
+          <span style="flex: 0 0 32px; width: 32px; height: 32px; border-radius: 8px; background: #E6F2EF; color: #3A8088; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;">5</span>
+          <div style="display: flex; flex-direction: column; gap: 4px;"><strong style="font-size: 15px; color: #000000;">IFRS და GAAP შესაბამისობა</strong><span style="font-size: 14px; line-height: 24px; color: #000000;">ანგარიშგება საერთაშორისო სტანდარტებით.</span></div>
+        </div>
+      
+        <div style="border: 1px solid #E4E1DC; border-radius: 12px; padding: 18px 20px; display: flex; gap: 12px;">
+          <span style="flex: 0 0 32px; width: 32px; height: 32px; border-radius: 8px; background: #E6F2EF; color: #3A8088; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;">6</span>
+          <div style="display: flex; flex-direction: column; gap: 4px;"><strong style="font-size: 15px; color: #000000;">მენეჯერული აღრიცხვა</strong><span style="font-size: 14px; line-height: 24px; color: #000000;">ანალიზი მართვის გადაწყვეტილებებისთვის.</span></div>
+        </div>
+      
+        <div style="border: 1px solid #E4E1DC; border-radius: 12px; padding: 18px 20px; display: flex; gap: 12px;">
+          <span style="flex: 0 0 32px; width: 32px; height: 32px; border-radius: 8px; background: #E6F2EF; color: #3A8088; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;">7</span>
+          <div style="display: flex; flex-direction: column; gap: 4px;"><strong style="font-size: 15px; color: #000000;">შიდა კონტროლის სისტემა</strong><span style="font-size: 14px; line-height: 24px; color: #000000;">რისკების მართვა და კომპლაიენსი.</span></div>
+        </div>
+      
+        <div style="border: 1px solid #E4E1DC; border-radius: 12px; padding: 18px 20px; display: flex; gap: 12px;">
+          <span style="flex: 0 0 32px; width: 32px; height: 32px; border-radius: 8px; background: #E6F2EF; color: #3A8088; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px;">8</span>
+          <div style="display: flex; flex-direction: column; gap: 4px;"><strong style="font-size: 15px; color: #000000;">ERP სისტემების ინტეგრაცია</strong><span style="font-size: 14px; line-height: 24px; color: #000000;">ავტომატიზაცია და ტექნოლოგიური მხარდაჭერა.</span></div>
+        </div>
+      
+    </div>
+    <div><a href="#quote" style="display: inline-block; background: #5CA595; color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 600; padding: 12px 22px; border-radius: 4px;">მიიღეთ შეთავაზება</a></div>
+  </section>
+
+  <section style="background: #F6F4F1;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 24px;">
+      <h2 style="margin: 0; font-size: clamp(28px, 4vw, 42px); line-height: 1.4; color: #000000;">აუთსორსინგი, შიდა ბუღალტერი თუ ფრილანსერი</h2>
+      <div style="overflow-x: auto; background: #FFFFFF; border-radius: 12px; border: 1px solid #E4E1DC;">
+        <table style="width: 100%; min-width: 640px; border-collapse: collapse; font-size: 14px;">
+          <thead>
+            <tr style="text-align: left;">
+              <th style="padding: 14px 18px; color: #444444; font-weight: 600; border-bottom: 1px solid #E4E1DC;">კრიტერიუმი</th>
+              <th style="padding: 14px 18px; color: #FFFFFF; background: #3A8088; font-weight: 600;">IBCCS TAX</th>
+              <th style="padding: 14px 18px; color: #444444; font-weight: 600; border-bottom: 1px solid #E4E1DC;">შიდა ბუღალტერი</th>
+              <th style="padding: 14px 18px; color: #444444; font-weight: 600; border-bottom: 1px solid #E4E1DC;">ფრილანსერი</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td style="padding: 14px 18px; border-bottom: 1px solid #EFECE8; font-weight: 600;">თვიური ხარჯი</td><td style="padding: 14px 18px; border-bottom: 1px solid #EFECE8; background: #F2F1F8;">ფიქსირებული, პაკეტით</td><td style="padding: 14px 18px; border-bottom: 1px solid #EFECE8;">ხელფასი + საშემოსავლო გადასახადი</td><td style="padding: 14px 18px; border-bottom: 1px solid #EFECE8;">დაბალი</td></tr>
+            <tr><td style="padding: 14px 18px; border-bottom: 1px solid #EFECE8; font-weight: 600;">პროგრამა და სამუშაო ადგილი</td><td style="padding: 14px 18px; border-bottom: 1px solid #EFECE8; background: #F2F1F8;">შედის ფასში <span class="ph">[დასადასტურებელი]</span></td><td style="padding: 14px 18px; border-bottom: 1px solid #EFECE8;">დამატებითი ხარჯი</td><td style="padding: 14px 18px; border-bottom: 1px solid #EFECE8;">საკუთარი</td></tr>
+            <tr><td style="padding: 14px 18px; border-bottom: 1px solid #EFECE8; font-weight: 600;">შვებულება, ავადმყოფობა</td><td style="padding: 14px 18px; border-bottom: 1px solid #EFECE8; background: #F2F1F8;">გუნდი მუშაობას აგრძელებს</td><td style="padding: 14px 18px; border-bottom: 1px solid #EFECE8;">პროცესი ჩერდება</td><td style="padding: 14px 18px; border-bottom: 1px solid #EFECE8;">რისკიანია</td></tr>
+            <tr><td style="padding: 14px 18px; font-weight: 600;">პასუხისმგებლობა შეცდომაზე</td><td style="padding: 14px 18px; background: #F2F1F8;"><span class="ph">[დაზღვევა და თანხა]</span></td><td style="padding: 14px 18px;">თანამშრომლის პასუხისმგებლობა</td><td style="padding: 14px 18px;">ხშირად არ არსებობს</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 24px;">
+    <h2 style="margin: 0; font-size: clamp(28px, 4vw, 42px); line-height: 1.4; color: #000000;">როგორ ვიწყებთ: 4 ნაბიჯი</h2>
+    <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+      
+        <li style="display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 3px solid #5CA595;">
+          <span style="font-size: 13px; font-weight: 700; color: #3A8088;">ნაბიჯი 1</span>
+          <strong style="font-size: 17px; color: #000000;">კონსულტაცია</strong>
+          <span style="font-size: 14px; line-height: 24px; color: #000000;">ვაფასებთ ბიზნესის სპეციფიკას და ტრანზაქციების მოცულობას.</span>
+          <span><span class="ph">[X წუთი]</span></span>
+        </li>
+      
+        <li style="display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 3px solid #5CA595;">
+          <span style="font-size: 13px; font-weight: 700; color: #3A8088;">ნაბიჯი 2</span>
+          <strong style="font-size: 17px; color: #000000;">შეთავაზება და ხელშეკრულება</strong>
+          <span style="font-size: 14px; line-height: 24px; color: #000000;">იღებთ პაკეტს, ფასს და ხელშეკრულებას.</span>
+          <span><span class="ph">[X დღე]</span></span>
+        </li>
+      
+        <li style="display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 3px solid #5CA595;">
+          <span style="font-size: 13px; font-weight: 700; color: #3A8088;">ნაბიჯი 3</span>
+          <strong style="font-size: 17px; color: #000000;">მონაცემების გადაცემა</strong>
+          <span style="font-size: 14px; line-height: 24px; color: #000000;">rs.ge-ს წვდომა, საბანკო ამონაწერები და არსებული ბაზა.</span>
+          <span><span class="ph">[X დღე]</span></span>
+        </li>
+      
+        <li style="display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 3px solid #5CA595;">
+          <span style="font-size: 13px; font-weight: 700; color: #3A8088;">ნაბიჯი 4</span>
+          <strong style="font-size: 17px; color: #000000;">ყოველთვიური მართვა</strong>
+          <span style="font-size: 14px; line-height: 24px; color: #000000;">დეკლარაციები ვადაში და ყოველთვიური ფინანსური რეპორტი.</span>
+          <span><span class="ph">[რეპორტის თარიღი]</span></span>
+        </li>
+      
+    </ol>
+  </section>
+
+  <section style="background: #ECE7E2;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-wrap: wrap; gap: 40px;">
+      <div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 14px;">
+        <h2 style="margin: 0; font-size: clamp(26px, 3.5vw, 35px); line-height: 1.4; color: #000000;">რომელი სექტორის ბიზნესებს ვემსახურებით</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span style="background: #FFFFFF; border-radius: 999px; padding: 8px 14px; font-size: 14px;">IT და ტექნოლოგიები</span>
+          <span style="background: #FFFFFF; border-radius: 999px; padding: 8px 14px; font-size: 14px;">ელ-კომერცია და რითეილი</span>
+          <span style="background: #FFFFFF; border-radius: 999px; padding: 8px 14px; font-size: 14px;">სასტუმროები და HORECA</span>
+          <span style="background: #FFFFFF; border-radius: 999px; padding: 8px 14px; font-size: 14px;">მშენებლობა და დეველოპმენტი</span>
+          <span style="background: #FFFFFF; border-radius: 999px; padding: 8px 14px; font-size: 14px;">ტრანსპორტი და ლოგისტიკა</span>
+          <span style="background: #FFFFFF; border-radius: 999px; padding: 8px 14px; font-size: 14px;">პროფესიული სერვისები</span>
+        </div>
+        <span><span class="ph">[სექტორების სია კლიენტთან დასადასტურებელია]</span></span>
+      </div>
+      <div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 12px;">
+        <h2 style="margin: 0; font-size: clamp(26px, 3.5vw, 35px); line-height: 1.4; color: #000000;">საგადასახადო დეკლარაციები და SARAS-ის ანგარიშგება</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 28px; color: #000000;">ვამზადებთ და SARAS-ის პორტალზე ვაბარებთ საწარმოების ფინანსურ ანგარიშგებას, IFRS for SMEs სტანდარტით. <span class="ph">[კატეგორიები: დასადასტურებელი]</span></p>
+        <a href="#" style="font-size: 15px; font-weight: 600;">SARAS-ის ანგარიშგების ვადა →</a>
+        <h3 style="margin: 12px 0 0; font-size: 24px; line-height: 1.4; color: #000000;">რომელ პროგრამებში ვმუშაობთ</h3>
+        <span><span class="ph">[პროგრამების სია: მაგ. Apex, Balansi, 1C, FMG, Zoho Books]</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 24px;">
+    <h2 style="margin: 0; font-size: clamp(28px, 4vw, 42px); line-height: 1.4; color: #000000;">რატომ IBCCS TAX</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 6px;"><strong style="font-size: 17px; color: #000000;">თბილისი და ბათუმი</strong><span style="font-size: 14px; line-height: 24px; color: #000000;">ორი ოფისი, ერთი გუნდი.</span></div>
+      <div style="display: flex; flex-direction: column; gap: 6px;"><strong style="font-size: 17px; color: #000000;">საერთაშორისო ჯგუფი</strong><span style="font-size: 14px; line-height: 24px; color: #000000;">IBCCS საერთაშორისო საკონსულტაციო ჯგუფის ნაწილია. <span class="ph">[ქსელის ზომა]</span></span></div>
+      <div style="display: flex; flex-direction: column; gap: 6px;"><strong style="font-size: 17px; color: #000000;">2018 წლიდან</strong><span style="font-size: 14px; line-height: 24px; color: #000000;">ვმუშაობთ ადგილობრივ და უცხოურ კომპანიებთან.</span></div>
+      <div style="display: flex; flex-direction: column; gap: 6px;"><strong style="font-size: 17px; color: #000000;">რამდენიმე ენაზე</strong><span style="font-size: 14px; line-height: 24px; color: #000000;">მომსახურება <span class="ph">[ენების სია]</span></span></div>
+    </div>
+  </section>
+
+  <section style="background: #F6F4F1;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 24px;">
+      <h2 style="margin: 0; font-size: clamp(28px, 4vw, 42px); line-height: 1.4; color: #000000;">რას ამბობენ კლიენტები</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        
+          <figure style="margin: 0; background: #FFFFFF; border: 1px solid #E4E1DC; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+            <blockquote style="margin: 0;"><span class="ph">[შეფასების ტექსტი, 2–3 წინადადება]</span></blockquote>
+            <figcaption style="display: flex; flex-direction: column; gap: 6px;"><span class="ph">[სახელი, პოზიცია]</span><span class="ph">[კომპანია + ლოგო]</span></figcaption>
+          </figure>
+        
+          <figure style="margin: 0; background: #FFFFFF; border: 1px solid #E4E1DC; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+            <blockquote style="margin: 0;"><span class="ph">[შეფასების ტექსტი, 2–3 წინადადება]</span></blockquote>
+            <figcaption style="display: flex; flex-direction: column; gap: 6px;"><span class="ph">[სახელი, პოზიცია]</span><span class="ph">[კომპანია + ლოგო]</span></figcaption>
+          </figure>
+        
+          <figure style="margin: 0; background: #FFFFFF; border: 1px solid #E4E1DC; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+            <blockquote style="margin: 0;"><span class="ph">[შეფასების ტექსტი, 2–3 წინადადება]</span></blockquote>
+            <figcaption style="display: flex; flex-direction: column; gap: 6px;"><span class="ph">[სახელი, პოზიცია]</span><span class="ph">[კომპანია + ლოგო]</span></figcaption>
+          </figure>
+        
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 24px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px;">
+      <h2 style="margin: 0; font-size: clamp(28px, 4vw, 42px); line-height: 1.4; color: #000000;">სხვა სერვისები</h2>
+      <a href="/ka/services" style="font-size: 15px; font-weight: 600;">IBCCS TAX-ის ყველა სერვისი →</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+      
+        <a href="/ka/legal-services" style="text-decoration: none; border: 1px solid #E4E1DC; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px;">
+          <strong style="font-size: 17px; color: #000000;">იურიდიული მომსახურება</strong>
+          <span style="font-size: 14px; line-height: 24px; color: #000000;">ხელშეკრულებები, კორპორაციული და შრომითი სამართალი.</span>
+          <span style="font-size: 14px; font-weight: 600; color: #3A8088;">დეტალურად →</span>
+        </a>
+      
+        <a href="/ka/startup-services" style="text-decoration: none; border: 1px solid #E4E1DC; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px;">
+          <strong style="font-size: 17px; color: #000000;">სტარტაპ სერვისები</strong>
+          <span style="font-size: 14px; line-height: 24px; color: #000000;">გრანტები, ფინანსური მოდელი და Fractional CFO.</span>
+          <span style="font-size: 14px; font-weight: 600; color: #3A8088;">დეტალურად →</span>
+        </a>
+      
+        <a href="/ka/business-registration" style="text-decoration: none; border: 1px solid #E4E1DC; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px;">
+          <strong style="font-size: 17px; color: #000000;">ბიზნესის რეგისტრაცია</strong>
+          <span style="font-size: 14px; line-height: 24px; color: #000000;">შპს ან ინდმეწარმე, საბანკო ანგარიშამდე.</span>
+          <span style="font-size: 14px; font-weight: 600; color: #3A8088;">დეტალურად →</span>
+        </a>
+      
+    </div>
+  </section>
+
+  <section style="background: #F6F4F1;">
+    <div style="max-width: 880px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 12px;">
+      <h2 style="margin: 0 0 12px; font-size: clamp(28px, 4vw, 42px); line-height: 1.4; color: #000000;">ხშირად დასმული კითხვები ბუღალტრულ მომსახურებაზე</h2>
+      <details open="" style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px;">
+        <summary style="font-size: 16px; font-weight: 600; color: #000000;">რა ღირს ბუღალტრული მომსახურება და რისგან დგება ფასი?</summary>
+        <p style="margin: 10px 0 0; font-size: 16px; line-height: 28px; color: #000000;">ფასი იწყება <span class="ph">[X]</span> ლარიდან თვეში და დამოკიდებულია ტრანზაქციების რაოდენობაზე, თანამშრომლების რიცხვსა და დღგ-ს სტატუსზე. ზუსტ ფასს შეთავაზებაში მიიღებთ.</p>
+      </details>
+      
+        <details style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px;">
+          <summary style="font-size: 16px; font-weight: 600; color: #000000;">შესაძლებელია თუ არა ერთჯერადი საბუღალტრო მომსახურება?</summary>
+          <p style="margin: 10px 0 0; font-size: 16px; line-height: 28px;"><span class="ph">[პასუხი 2–4 წინადადებით]</span></p>
+        </details>
+      
+        <details style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px;">
+          <summary style="font-size: 16px; font-weight: 600; color: #000000;">რამდენ ხანში იწყება მომსახურება?</summary>
+          <p style="margin: 10px 0 0; font-size: 16px; line-height: 28px;"><span class="ph">[პასუხი 2–4 წინადადებით]</span></p>
+        </details>
+      
+        <details style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px;">
+          <summary style="font-size: 16px; font-weight: 600; color: #000000;">რა დოკუმენტები და წვდომები გჭირდებათ დასაწყებად?</summary>
+          <p style="margin: 10px 0 0; font-size: 16px; line-height: 28px;"><span class="ph">[პასუხი 2–4 წინადადებით]</span></p>
+        </details>
+      
+        <details style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px;">
+          <summary style="font-size: 16px; font-weight: 600; color: #000000;">ემსახურებით დღგ-ს გადამხდელ კომპანიებსა და ინდმეწარმეებს?</summary>
+          <p style="margin: 10px 0 0; font-size: 16px; line-height: 28px;"><span class="ph">[პასუხი 2–4 წინადადებით]</span></p>
+        </details>
+      
+        <details style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px;">
+          <summary style="font-size: 16px; font-weight: 600; color: #000000;">ამზადებთ SARAS-ის ფინანსურ ანგარიშგებას?</summary>
+          <p style="margin: 10px 0 0; font-size: 16px; line-height: 28px;"><span class="ph">[პასუხი 2–4 წინადადებით]</span></p>
+        </details>
+      
+        <details style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px;">
+          <summary style="font-size: 16px; font-weight: 600; color: #000000;">შეგიძლიათ წინა პერიოდის აღრიცხვის აღდგენა?</summary>
+          <p style="margin: 10px 0 0; font-size: 16px; line-height: 28px;"><span class="ph">[პასუხი 2–4 წინადადებით]</span></p>
+        </details>
+      
+        <details style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px;">
+          <summary style="font-size: 16px; font-weight: 600; color: #000000;">მუშაობთ დისტანციურად?</summary>
+          <p style="margin: 10px 0 0; font-size: 16px; line-height: 28px;"><span class="ph">[პასუხი 2–4 წინადადებით]</span></p>
+        </details>
+      
+        <details style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px;">
+          <summary style="font-size: 16px; font-weight: 600; color: #000000;">ემსახურებით უცხოურ კომპანიებს და რომელ ენაზე?</summary>
+          <p style="margin: 10px 0 0; font-size: 16px; line-height: 28px;"><span class="ph">[პასუხი 2–4 წინადადებით]</span></p>
+        </details>
+      
+        <details style="background: #FFFFFF; border-radius: 10px; padding: 18px 20px;">
+          <summary style="font-size: 16px; font-weight: 600; color: #000000;">დაზღვეულია თუ არა თქვენი პროფესიული პასუხისმგებლობა?</summary>
+          <p style="margin: 10px 0 0; font-size: 16px; line-height: 28px;"><span class="ph">[პასუხი 2–4 წინადადებით]</span></p>
+        </details>
+      
+    </div>
+  </section>
+
+  <section style="background: linear-gradient(90deg, #234D51 0%, #28538A 100%);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between;">
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 10px;">
+        <h2 style="margin: 0; font-size: clamp(28px, 4vw, 42px); line-height: 1.4; color: #FFFFFF;">მოვაწესრიგოთ თქვენი ბუღალტერია</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 28px; color: #FFFFFF;">დაგვიტოვეთ ნომერი, დაგირეკავთ და პაკეტს ერთად შევარჩევთ. <span class="ph">[თუ კონსულტაცია უფასოა, აქ ეწერება]</span></p>
+      </div>
+      <form style="flex: 1 1 420px; min-width: 0; display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end;">
+        <label style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #FFFFFF;">სახელი<input type="text" style="font: inherit; padding: 12px; border: 0; border-radius: 4px;"></label>
+        <label style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #FFFFFF;">ტელეფონი<input type="tel" style="font: inherit; padding: 12px; border: 0; border-radius: 4px;"></label>
+        <button type="button" style="flex: 1 1 140px; font: inherit; background: #FFFFFF; color: #000000; font-size: 16px; font-weight: 600; padding: 12px; border: 0; border-radius: 4px; cursor: pointer;">დამირეკეთ</button>
+      </form>
+    </div>
+  </section>
+
+  <footer style="background: #FFFFFF; border-top: 1px solid #E4E1DC;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 24px 24px 88px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 12px; color: #000000;">
+      <span>IBCCS TAX Georgia · თბილისი · ბათუმი</span>
+      <span>მოქაფი: /ka/finance-and-taxation · 10xSEO · 07.10.2026</span>
+    </div>
+  </footer>
+
+  <div class="sticky" style="gap: 8px; padding: 10px 12px; background: #FFFFFF; border-top: 1px solid #E4E1DC;">
+    <a href="tel:+995322424837" style="flex: 1; text-align: center; color: #000000; text-decoration: none; font-weight: 600; padding: 12px; border: 1px solid #5CA595; border-radius: 4px;">დარეკვა</a>
+    <a href="#prices" style="flex: 1; text-align: center; background: #5CA595; color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 12px; border-radius: 4px;">ფასები</a>
+  </div>
+</div>
+</body>
+</html>
